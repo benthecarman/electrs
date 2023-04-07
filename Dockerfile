@@ -23,4 +23,4 @@ COPY --from=electrs-build /root/.cargo/bin/electrs /usr/bin/electrs
 
 WORKDIR /
 
-ENTRYPOINT ["electrs"]
+ENTRYPOINT ["/usr/bin/electrs"]
